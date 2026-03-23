@@ -1,0 +1,33 @@
+.container{
+            display: grid;
+            gap:2vw;
+            grid-template-columns: 30vh 1fr 1fr 1fr;
+            grid-template-rows:35vw 1fr;
+            box-sizing: border-box;
+        }
+        .box{
+            background-color: white;
+        }
+         .box1{
+            grid-column:1/2;
+            grid-row: 1/8;
+            background-color: rgb(61, 24, 23);
+        }
+        .box2{
+            grid-row: 1/2;
+            grid-column: 2/4;
+            background-color: darkgreen;
+        }
+        .box3{
+           
+            grid-row: 1/8;
+            background-color: rgb(67, 22, 22);
+        }
+        .box4{
+            grid-row: 2/8;
+            background-color:cornflowerblue;
+        }
+        .box5{
+            grid-row: 2/8;
+            background-color: cornflowerblue;
+        }

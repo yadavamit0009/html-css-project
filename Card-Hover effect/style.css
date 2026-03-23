@@ -1,0 +1,43 @@
+ html,body{
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            background-color: black;
+            overflow: hidden;
+        }
+        .grid-style{
+            display: grid;
+            border: 2px black solid;
+            height: 100%;
+            width: 100%;
+            gap:5px;
+            /* grid-template-columns: auto auto auto auto auto*/
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            transition: grid-template-columns 1.5s ease-in-out;
+
+        }
+        .box{
+            overflow: hidden;
+            cursor: pointer;
+        }
+        .box img{
+            width: 100%;
+            height: 100%;
+            object-fit:cover;
+            transition: transform 0.5s ease;
+        }
+        .box:hover img{
+            transform: scale(1.1);
+        }
+        .grid-style:has(.box-1:hover){
+            grid-template-columns: 1.5fr 1fr 1fr 1fr 1fr;
+        }.grid-style:has(.box-2:hover){
+            grid-template-columns: 1fr 1.5fr 1fr 1fr 1fr;
+        }.grid-style:has(.box-3:hover){
+            grid-template-columns: 1fr 1fr 1.5fr 1fr 1fr;
+        }.grid-style:has(.box-4:hover){
+            grid-template-columns: 1fr 1fr 1fr 1.5fr 1fr;
+        }.grid-style:has(.box-5:hover){
+            grid-template-columns: 1fr 1fr 1fr 1fr 1.5fr;
+        }

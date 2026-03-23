@@ -1,0 +1,59 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f8fb;
+    text-align: center;
+}
+header{
+    background-image: url('/RurqKDM.jpeg');
+    color: white;
+    background-size: cover;
+    background-position: center;
+    padding: 7.8vh 1.5vw;
+}
+header h1{
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+
+}
+header p{
+    font-size: 1.3rem;
+    margin-bottom: 1.5vw;
+}
+.action-button{
+    padding: 1.5vh 1.5vw;
+    background-color: #007bff;
+    color: white;
+    overflow: hidden;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.action-button:hover{
+    background-color: #0056b3;
+}
+.features{
+    display: flex;
+    justify-content: center;
+    padding:1.5vw;
+}
+.feature{
+    margin: 1.5vh;
+    padding: 7.8vh 1.5vw;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    background-color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.feature:hover{
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+footer{
+    background-color: #333;
+    padding: 1.5vh 0;
+    color: white;
+    text-align: center;
+}
