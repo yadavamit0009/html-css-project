@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>For My Love ❤️</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #ffdde1, #ee9ca7);
+      overflow: hidden;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .stars {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      z-index: 1;
+    }
+
+    .star {
+      position: absolute;
+      width: 2px;
+      height: 2px;
+      background: white;
+      animation: twinkle 3s infinite ease-in-out;
+    }
+
+    @keyframes twinkle {
+      0%, 100% { opacity: 0.2; transform: scale(1); }
+      50% { opacity: 1; transform: scale(1.5); }
+    }
+
+    .content {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      color: white;
+      padding-top: 10vh;
+    }
+
+    h1 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 4rem;
+      animation: fadeInDown 2s ease-out forwards;
+    }
+
+    p {
+      font-size: 1.4rem;
+      max-width: 600px;
+      margin: 30px auto;
+      animation: fadeInUp 3s ease-out forwards;
+    }
+
+    .heart {
+      font-size: 3rem;
+      color: red;
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes fadeInDown {
+      0% { transform: translateY(-50px); opacity: 0; }
+      100% { transform: translateY(0); opacity: 1; }
+    }
+
+    @keyframes fadeInUp {
+      0% { transform: translateY(50px); opacity: 0; }
+      100% { transform: translateY(0); opacity: 1; }
+    }
+
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+    }
+
+    .btn {
+      margin-top: 30px;
+      background: white;
+      color: #ee9ca7;
+      padding: 12px 30px;
+      font-size: 1.2rem;
+      border-radius: 25px;
+      border: none;
+      cursor: pointer;
+      transition: 0.3s;
+      animation: fadeInUp 4s ease-out forwards;
+    }
+
+    .btn:hover {
+      background: #fff0f3;
+    }
+
+    .message-popup {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) scale(0);
+      background: rgba(255, 255, 255, 0.95);
+      color: #d6336c;
+      padding: 40px;
+      border-radius: 20px;
+      text-align: center;
+      font-size: 1.6rem;
+      box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+      animation: popIn 1s ease-out forwards;
+      font-family: 'Great Vibes', cursive;
+      z-index: 100;
+      display: none;
+    }
+
+    @keyframes popIn {
+      0% { transform: translate(-50%, -50%) scale(0); opacity: 0; }
+      60% { transform: translate(-50%, -50%) scale(1.2); opacity: 1; }
+      100% { transform: translate(-50%, -50%) scale(1); }
+    }
+
+    .heart-beat {
+      font-size: 3rem;
+      margin-top: 20px;
+      animation: beat 1.2s infinite;
+      cursor: pointer;
+    }
+
+    @keyframes beat {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.4); }
+    }
+
+    .neon-heart {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 10rem;
+      color: #ff4da6;
+      text-shadow: 0 0 20px #ff4da6, 0 0 40px #ff4da6, 0 0 80px #ff4da6;
+      animation: fadeOut 3s ease-out forwards;
+      opacity: 0;
+      z-index: 200;
+      pointer-events: none;
+    }
+
+    @keyframes fadeOut {
+      0% { opacity: 0; transform: translate(-50%, -50%) scale(0); }
+      30% { opacity: 1; transform: translate(-50%, -50%) scale(1.2); }
+      100% { opacity: 0; transform: translate(-50%, -50%) scale(0.8); }
+    }
+  </style>
+</head>
+<body>
+  <div class="stars" id="stars"></div>
+
+  <div class="content">
+    <h1>Hi My Love 💕</h1>
+    <p>I made this just for you, because you’re the most magical part of my world. Every moment without you feels incomplete. I can't wait to see your smile again...</p>
+    <div class="heart">❤️</div>
+    <button class="btn" onclick="reveal()">Will You Be Mine Forever?</button>
+  </div>
+
+  <!-- Message popup -->
+  <div class="message-popup" id="popup">
+    You already know the answer is YES! 💍
+    <div class="heart-beat" onclick="showBigHeart()">❤️</div>
+  </div>
+
+  <!-- Neon Heart -->
+  <div class="neon-heart" id="neonHeart">💗</div>
+
+  <script>
+    const popup = document.getElementById('popup');
+    const neonHeart = document.getElementById('neonHeart');
+    let isActive = false;
+
+    // Generate stars
+    const starContainer = document.getElementById('stars');
+    for (let i = 0; i < 100; i++) {
+      const star = document.createElement('div');
+      star.className = 'star';
+      star.style.top = Math.random() * 100 + '%';
+      star.style.left = Math.random() * 100 + '%';
+      star.style.animationDelay = Math.random() * 3 + 's';
+      starContainer.appendChild(star);
+    }
+
+    function reveal() {
+      if (!isActive) {
+        popup.style.display = 'block';
+        popup.style.animation = 'popIn 1s ease-out forwards';
+        isActive = true;
+      }
+    }
+
+    function showBigHeart() {
+      popup.style.display = 'none';
+      neonHeart.style.opacity = '1';
+      neonHeart.style.animation = 'fadeOut 3s ease-out forwards';
+
+      // Reset everything after 3.5 seconds
+      setTimeout(() => {
+        neonHeart.style.opacity = '0';
+        neonHeart.style.animation = 'none';
+        isActive = false;
+      }, 3500);
+    }
+  </script>
+</body>
+</html>
