@@ -59,6 +59,10 @@ header .right{
     box-shadow: 1px  1px 8px #030303;
     position: relative;
 }
+.card:hover{
+    box-shadow: inset 0px  0px 15px #4E2312;
+    border: 1px solid #BA6F32;
+}
 .card img{
     height: 65%;
     width: 100%;
@@ -116,11 +120,10 @@ section{
 }
 .special-card{
     height: 100%;
-    width: 84%;
+    width: 85%;
     background-color: #0c0b0b;
     display: flex;
     padding: 10px;
-    
     box-shadow: 1px  1px 8px #030303;
     border: 2px solid #61402C;
     border-radius: 15px;
@@ -135,32 +138,35 @@ section{
     
 }
 .meal-heading{
-line-height: 45px;
+line-height: 5vh;
 }
 .meal-heading .chef{
-    font-size: 20px;
+    font-size: 3vh;
     letter-spacing: 3px;
     color: #B1772F;
 }
 .meal-heading h2{
-    font-size: 50px;
+    font-size: 6vh;
     font-weight: 300;
     color: white;
 }
 .head-body{
-    font-size: 20px;
+    font-size: 2vh;
     color: #666666;
 }
 .meal-description button{
     width: fit-content;
     padding: 10px 25px;
     display: flex;
-    gap: 20px;
+    gap: 3vh;
     border-radius: 50px;
-    font-size: 20px;
+    font-size: 3vh;
     background-color: #0A0A0A;
     border: 2px solid #743e2d;
     color:#864F27 ;
+}
+.leaf img{
+    height: 43vh;
 }
 hr{
     color: #77492A;
