@@ -23,7 +23,7 @@ header h1{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 10px auto;
+    margin: 20px auto;
     gap: 2px;
 }
 header .line{
@@ -127,6 +127,7 @@ section{
     box-shadow: 1px  1px 8px #030303;
     border: 2px solid #61402C;
     border-radius: 15px;
+    justify-content: space-around;
 
 }
 .meal-description{
@@ -166,7 +167,7 @@ line-height: 5vh;
     color:#864F27 ;
 }
 .leaf img{
-    height: 43vh;
+    height: 45vh;
 }
 hr{
     color: #77492A;
