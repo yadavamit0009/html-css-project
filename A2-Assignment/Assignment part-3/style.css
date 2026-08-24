@@ -10,41 +10,41 @@ html,body{
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    background-color: black;
+    
 }
 main{
 
-    height: 90vh;
-    width: 70vw;
-    background: #faf3f3;
+    height: 92vh;
+    width: 72vw;
     display: flex;
-
+    
 }
 .left{
-    height: 90vh;
-    width: 35vw;
-    background-color: #b38383;
+    height: 92vh;
+    width: 36vw;
+    background-color: #FEFEFE;
 }
 .left nav{
-    background-color: aquamarine;
     display: flex;
     align-items: center;
-    padding: 2.2vh 2vw;
-    gap: 5vw;
+    padding: 3vh 2vw;
+    gap: 4vw;
 }
 .search-container{
-    background-color: #EFEFEF;
     width: 16vw;
     border-radius: 2vw;
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 1.5vw;
-    padding: 1.2vh 1.2vw;
-
+    gap: 1.2vw;
+    margin-top: 0.7vh;
+    padding: 1.1vh 1vw;
+    background-color: #f0efef;
 
 }
 .search-container i{
     font-size: 1.2vw;
+    color: #5E5E5E;
 }
 .search-container .search-input{
     outline: none;
@@ -54,9 +54,60 @@ main{
 }
 .search-container .search-input::placeholder{
     font-size: 1.1vw;
+    color: #5E5E5E;
 }
+
+.left-content{
+    font-size: 2.5vh;
+    position: relative;
+    
+}
+.left-content h2{
+    transform: rotate(-90deg);
+    font-size: 6.5vh;
+    font-weight: 500;
+    position: absolute;
+    top: 32vh;
+    left: -4vw;
+    font-style: italic;
+}
+.left-inner-content{
+    position: absolute;
+    top: 10.5vh;
+    left: 12.5vw;
+} 
+.left-inner-content ul li::marker{
+    color: #B93E3A;
+    font-size: 2.5vh;
+}
+.left-inner-content li{
+    font-weight: 600;
+    font-size: 2.1vh;
+    padding: 0.4vh 0.2vw;
+}
+
+.left-inner-content ul p{
+    font-size: 2.1vh;
+    padding-left: 0.2vw;
+    padding-bottom: 0.5vh;
+}
+.left-inner-content .line{
+    height: 0.1vh;
+    width: 10vw;
+    margin: 1vh 0.2vw;
+    background-color: black;
+    opacity: 0.2;
+}
+.center-img{
+    height: 68vh;
+    position: absolute;
+    left: 36.9vw;
+    top: 18.5vh;
+    filter: drop-shadow(0vw 1.2vh 0.5vh rgba(0, 0, 0,0.5));
+}
+
 .right{
-    height: 90vh;
-    width: 35vw;
-    background-color: blueviolet;
+    height: 92vh;
+    width: 36vw;
+    background-color: #B8362E;
 }
