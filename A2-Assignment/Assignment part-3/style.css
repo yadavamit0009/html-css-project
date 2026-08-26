@@ -101,7 +101,7 @@ main{
 .center-img{
     height: 68vh;
     position: absolute;
-    left: 36.9vw;
+    left: 37.05vw;
     top: 18.5vh;
     filter: drop-shadow(0vw 1.2vh 0.5vh rgba(0, 0, 0,0.5));
 }
@@ -124,4 +124,110 @@ main{
 }
 .right h2{
     color: white;
+    font-weight: 100;
+    font-size: 6vh;
+    padding: 9vh 0vw 4vh 14vw;
+    line-height: 6.5vh;
+}
+
+.right .right-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5vw;
+    padding: 0vh 0vw 0vh 7vw;
+
+}
+.right-center .img-bug img{
+    height: 13vh;
+}
+.right-center .img-bug p{
+    color: white;
+    padding-left: 1.2vw;
+    font-size: 1.7vh;
+}
+.right-center .line{
+    height: 14vh;
+    width: 0.05vw;
+    background-color: rgb(255, 254, 254);
+}
+.right-center-details .rcd{
+    display: flex;
+    gap: 1.5vh;
+    padding-top: 1vh;
+}
+.right-center-details .rcd p{
+    color: white;
+    line-height: 3vh;
+ 
+    font-size: 2vh;
+}
+.right-center-details .rcd i{
+    font-size: 3.5vh;
+    color: #E3C39C;
+
+}
+
+.right-bottom h2{
+    font-size: 4vh;
+    color: #EDCFA4;
+    font-weight: bold;
+    padding:2.5vh 0vw 1.5vh 14vw;
+}
+
+.toggle-btn{
+    /* background-color: #E3C39C; */
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    gap: 0.5vw;
+    margin-bottom: 2vh;
+    padding-left: 14vw;
+}
+
+
+.right-bottom .button{
+    background-color:#CB7D72;
+    height: 2.4vh;
+    width: 2.2vw;
+    border-radius: 2vh;
+    cursor: pointer;
+    position: relative;
+    transition: 0.2s;
+}
+
+.right-bottom .toggle-btn p{
+    color: #FEFEFE;
+    font-size: 2vh;
+}
+
+.button::before{
+    position: absolute;
+    content: '';
+    background-color: #FEFEFE;
+    height: 2vh;
+    width: 1vw;
+    border-radius: 50%;
+    margin: 0.1vw;
+    transition: 0.2s;
+}
+.right-bottom .toggle-btn input:checked + .button{
+    background-color: #E3C39C;
+}
+.right-bottom .toggle-btn input:checked + .button::before{
+    transform: translateX(1vw);
+}
+
+.right-bottom .toggle-btn input{
+    display: none;
+}
+
+.right-bottom button{
+    margin-left: 14vw;
+    padding: 1.7vh 2.8vw;
+    border-radius: 1.5vh;
+    background-color: #E3C39C;
+    margin-top: 0.5vh;
+    border: none;
+    letter-spacing: 0.15vh;
 }

@@ -1,73 +1,97 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
     <link
-  href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
-  rel="stylesheet"
-/>
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
     <title>INSECT</title>
-</head>
-<body>
+  </head>
+  <body>
     <main>
-        <div class="left">
-            <nav>
-                <H2>INSECT</H2>
-                <div class="search-container">
-                    <i class="ri-search-line"></i>
-                    <input type="text " class="search-input" placeholder="Search...">
-                </div>
-            </nav>
-            <div class="left-content">
-                <h2>Classification</h2>
-                <div class="left-inner-content">
-                    <ul>
-                        <li>Class:</li>
-                        <p>Insecta</p>
-                        <div class="line"></div>
-                        <li>Order:</li>
-                        <p>Coleoptera</p>
-                        <div class="line"></div>
-                        <li>Family:</li>
-                        <p>Cerambycidae</p>
-                        <div class="line"></div>
-                        <li>Sub-Family:</li>
-                        <p>Cerambycinae</p>
-                        <div class="line"></div>
-                        <li>Tribe:</li>
-                        <p>Callicromatini</p>
-                        <div class="line"></div>
-                        <li>Genus:</li>
-                        <p>Pachyteria</p>
-                    </ul>
-                </div>
-            </div>
-            
+      <div class="left">
+        <nav>
+          <h2>INSECT</h2>
+          <div class="search-container">
+            <i class="ri-search-line"></i>
+            <input type="text " class="search-input" placeholder="Search..." />
+          </div>
+        </nav>
+        <div class="left-content">
+          <h2>Classification</h2>
+          <div class="left-inner-content">
+            <ul>
+              <li>Class:</li>
+              <p>Insecta</p>
+              <div class="line"></div>
+              <li>Order:</li>
+              <p>Coleoptera</p>
+              <div class="line"></div>
+              <li>Family:</li>
+              <p>Cerambycidae</p>
+              <div class="line"></div>
+              <li>Sub-Family:</li>
+              <p>Cerambycinae</p>
+              <div class="line"></div>
+              <li>Tribe:</li>
+              <p>Callicromatini</p>
+              <div class="line"></div>
+              <li>Genus:</li>
+              <p>Pachyteria</p>
+            </ul>
+          </div>
         </div>
-            <img src="./image.png" class="center-img" alt="insect-img">
+      </div>
+      <img src="./image.png" class="center-img" alt="insect-img" />
 
-        <div class="right">
-            <nav>
-                <a href="#">Home</a><a href="#">Shop</a><a href="#">About</a><a href="#">Gallery</a><a href="#">Contact</a>
-            </nav>
-            <h2>Pachyteria<br>equestris</h2>
-            <div class="right-center">
-                <img src="./bug.png" alt="bug">
-                <div class="line"></div>
-                <div class="right-center-details">
-                    <span><i class="ri-map-pin-2-fill"></i></span><p>Locality:<br>Malaysia</p>
-                    <span><i class="ri-men-line"></i></span>
-                    <p>Sex:<br>Male</p>
-                    <Span><i class="ri-ruler-line"></i></Span><p>Size:<br>32 mm / 12 mm</p>
-                </div>
-                <div class="right-bottom">
-                    <h2>$5.99</h2>
-                    <input type="">
-                </div>
+      <div class="right">
+        <nav>
+          <a href="#">Home</a><a href="#">Shop</a><a href="#">About</a
+          ><a href="#">Gallery</a><a href="#">Contact</a>
+        </nav>
+        <h2>Pachyteria<br />equestris</h2>
+        <div class="right-center">
+          <div class="img-bug">
+            <img src="./bug.png" alt="bug" />
+            <p>32 mm</p>
+          </div>
+
+          <div class="line"></div>
+          <div class="right-center-details">
+            <div class="rcd">
+              <span><i class="ri-map-pin-2-fill"></i></span>
+              <p>Locality:<br />Malaysia</p>
             </div>
+
+            <div class="rcd">
+              <span><i class="ri-men-line"></i></span>
+              <p>Sex:<br />Male</p>
+            </div>
+
+            <div class="rcd">
+              <span><i class="ri-ruler-line"></i></span>
+              <p>Size:<br />32 mm / 12 mm</p>
+            </div>
+          </div>
         </div>
+        <div class="right-bottom">
+          <h2>$5.99</h2>
+          <div class="toggle-btn">
+            <input type="checkbox"  id="check"/>
+          <label for="check" class="button"></label>
+          <p>View detailed antennae</p>
+          </div>
+          <div class="toggle-btn">
+            <input type="checkbox"  id="check1"/>
+          <label for="check1" class="button"></label><p>View underside</p>
+          </div>
+          <button>Add to collection</button>
+        </div>
+      </div>
     </main>
-</body>
+  </body>
 </html>
+>
