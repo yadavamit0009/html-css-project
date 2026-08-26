@@ -111,3 +111,17 @@ main{
     width: 36vw;
     background-color: #B8362E;
 }
+.right nav{
+    display: flex;
+    align-items: center;
+    padding: 4vh 4vw;
+    gap: 3.5vw;
+}
+.right nav a{
+    text-decoration: none;
+    color: white;
+    font-size: 2.2vh;
+}
+.right h2{
+    color: white;
+}
