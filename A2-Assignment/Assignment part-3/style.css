@@ -65,7 +65,7 @@ main{
 .left-content h2{
     transform: rotate(-90deg);
     font-size: 6.5vh;
-    font-weight: 500;
+    font-weight: 550;
     position: absolute;
     top: 32vh;
     left: -4vw;
