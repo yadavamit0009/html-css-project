@@ -32,6 +32,7 @@ main {
   backdrop-filter: blur(3px); 
   display: flex;
   flex-direction: column;
+  
 }
 
 header {
@@ -155,10 +156,20 @@ main header .icon i:first-child {
     position: absolute;
     bottom: 0;
 }
+.line{
+   border:2px solid #020202;
+  border-color:  transparent transparent #7c6f62 transparent ;
+  border-radius: 150px;
+  transform: rotate(180deg);
+}
 footer {
-  height: 25%;
+   height: 25%;
   width: 80%;
-  background-color: bisque;
-    border: solid 5px transparent;
 
+  /* position:absolute; */
+}
+.bottom{
+   /* height: 100%;
+  width: 100%;
+  background-color: bisque */
 }
