@@ -32,6 +32,9 @@ main {
   backdrop-filter: blur(3px); 
   display: flex;
   flex-direction: column;
+  position: relative;
+  z-index: 11;
+  /* overflow: hidden; */
   
 }
 
@@ -157,19 +160,46 @@ main header .icon i:first-child {
     bottom: 0;
 }
 .line{
-   border:2px solid #020202;
-  border-color:  transparent transparent #7c6f62 transparent ;
-  border-radius: 150px;
-  transform: rotate(180deg);
+
+ /* position:absolute;
+ left: -5%;
+  bottom: -30px;
+
+    width: 110%;
+
+    height: 95px;
+
+    background: #29252f;
+
+    border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+
+    z-index: 7; */
+    /* transform: rotateX(180deg); */
+
+    /* background-color: #F6D375; */
+
+    position: absolute;
+    z-index: 2;
+    top: -30%;
+    right:-20%;
+    border: 2px solid black;
+    border-radius: 50%;
+    height: 130%;
+    width: 140%;
+    border-color: transparent #29252f #29252f #29252f ;
+    
 }
 footer {
-   height: 25%;
-  width: 80%;
-
+  height: 25%;
+  width: 80%; 
+position: relative;
   /* position:absolute; */
-}
+} 
 .bottom{
-   /* height: 100%;
+   height: 100%;
   width: 100%;
-  background-color: bisque */
+  background-color: #29252f;
+  position: absolute;
+  top: -50%;
+  z-index: -1;
 }
