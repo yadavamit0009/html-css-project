@@ -24,6 +24,8 @@ body {
   background-position: center;
   background-repeat: no-repeat;
 
+
+
 }
 
 main {
@@ -33,8 +35,8 @@ main {
   display: flex;
   flex-direction: column;
   position: relative;
-  z-index: 11;
-  /* overflow: hidden; */
+
+  overflow: hidden;
   
 }
 
@@ -158,35 +160,19 @@ main header .icon i:first-child {
 .center img{
     position: absolute;
     bottom: 0;
+    height: 80%;
 }
 .line{
 
- /* position:absolute;
- left: -5%;
-  bottom: -30px;
-
-    width: 110%;
-
-    height: 95px;
-
-    background: #29252f;
-
-    border-radius: 50% 50% 0 0 / 100% 100% 0 0;
-
-    z-index: 7; */
-    /* transform: rotateX(180deg); */
-
-    /* background-color: #F6D375; */
-
     position: absolute;
-    z-index: 2;
     top: -30%;
-    right:-20%;
-    border: 2px solid black;
+    right:-25%;
+
     border-radius: 50%;
     height: 130%;
-    width: 140%;
+    width: 150%;
     border-color: transparent #29252f #29252f #29252f ;
+    box-shadow: 10px 100px 0px #29252f;
     
 }
 footer {
@@ -199,7 +185,6 @@ position: relative;
    height: 100%;
   width: 100%;
   background-color: #29252f;
-  position: absolute;
-  top: -50%;
-  z-index: -1;
+
+
 }
