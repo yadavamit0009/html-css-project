@@ -179,7 +179,7 @@ footer {
   height: 25%;
   width: 80%; 
 position: relative;
-  /* position:absolute; */
+
 } 
 .bottom{
    height: 100%;
@@ -187,4 +187,8 @@ position: relative;
   background-color: #29252f;
 
 
+}
+
+.bottom h2{
+  color: white;
 }
