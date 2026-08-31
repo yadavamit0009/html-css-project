@@ -185,10 +185,54 @@ position: relative;
    height: 100%;
   width: 100%;
   background-color: #29252f;
-
-
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .bottom h2{
   color: white;
+}
+.lin-div{
+  height: 40%;
+  width: 100%;
+  display: flex;
+  position: relative;
+
+  /* align-items: center; */
+  padding-top:20px ;
+  justify-content: center;
+  /* gap: 5px; */
+}
+.bottom .lin-div .dot{
+  height: 10.5%;
+  width: 0.5%;
+  background-color: #F6D375;
+  transform: rotateZ(45deg);
+  margin-top: 1.5px;
+}
+.line-bottom{
+  height: 2.4%;
+  width: 30%; 
+  background-color: white;
+  margin-top: 4.5px;
+}
+.diamond{
+  height: 16%;
+  width: 0.8%;
+  background-color: #F6D375;
+  transform: rotateZ(45deg);
+  margin: -1px 5px;
+}
+
+.diamond-line-bottom{
+  height: 21%;
+  width: 1.31%;
+  border: 2px white dotted;
+  transform: rotateZ(45deg);
+  position: absolute;
+  border-color: transparent white white transparent;
+  top:16px;
 }
