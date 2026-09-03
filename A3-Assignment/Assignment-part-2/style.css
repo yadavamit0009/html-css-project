@@ -6,4 +6,12 @@
 html,body{
     height: 100%;
     width: 100%;
+    background-color: rgb(51, 47, 47);
+}
+.container{
+    height: 95%;
+    width: 80%;
+    background: #FCF4EE;
+    margin: auto;
+    margin-top: 1.3%;
 }
