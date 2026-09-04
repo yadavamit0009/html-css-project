@@ -25,6 +25,8 @@ main{
     height: 10%;
     width: 100%;
     background-color: aquamarine;
+    display: flex;
+    align-items: center;
 }
 .logo{
     background-color: antiquewhite;
@@ -40,6 +42,20 @@ main{
 .logo h3{
     font-size: 25px;
     font-weight: lighter;
-    
 
+
+}
+nav{
+    background-color: aqua;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    gap: 5%;
+    justify-content: end;
+
+}
+nav a{
+  font-size: 13px;
+  text-decoration: none;
 }
