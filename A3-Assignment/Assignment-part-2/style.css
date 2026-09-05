@@ -24,12 +24,11 @@ main{
 .container main header{
     height: 10%;
     width: 100%;
-    background-color: aquamarine;
+    background-color: #FCF4EE;
     display: flex;
     align-items: center;
 }
 .logo{
-    background-color: antiquewhite;
     height: 100%;
     width: 15%;
     display: flex;
@@ -46,7 +45,6 @@ main{
 
 }
 nav{
-    background-color: aqua;
     height: 100%;
     width: 50%;
     display: flex;
@@ -56,6 +54,50 @@ nav{
 
 }
 nav a{
-  font-size: 13px;
+  font-size: 12px;
   text-decoration: none;
+  color: #403E3A;
+}
+.search-bar{
+    height: 55%;
+    width: 22%;
+    background-color:#FAF5EE;
+    display: flex;
+    align-items: center;
+    /* gap:10px; */
+    justify-content: space-evenly;
+    border: 1px solid black;
+    border-radius: 20px;
+    margin-top: 15px;
+    margin-left: 8%;
+    position: relative;
+}
+.search-bar input{
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+.search-bar .line{
+    height: 1px;
+    width: 7.5%;
+    background-color: black;
+    transform: rotateZ(90deg);
+    position: absolute;
+    left: 75%;
+}
+.search-bar .ri-shopping-bag-fill{
+    font-size: 20px;
+}
+.search-bar sup{
+    height: 17px;
+    width: 17px;
+    background-color:#D92432;
+    position: absolute;
+    top: -5px;
+    right: 0;
+    border-radius: 6px;
+}
+.search-bar sup p{
+   text-align: center;
+   color: white;
 }
